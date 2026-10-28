@@ -1,0 +1,21 @@
+{
+  "name": "lasso",
+  "version": "1.0.0",
+  "description": "Find unpaid Amazon links, dry-run higher-rate hops, and report clicks for one site.",
+  "mcpServers": {
+    "lasso": {
+      "httpUrl": "https://lasso.link/mcp",
+      "headers": {
+        "Authorization": "Bearer ${LASSO_LICENSE_KEY}"
+      }
+    }
+  },
+  "settings": [
+    {
+      "name": "Lasso license key",
+      "description": "Hub Website license key from https://app.getlasso.co/websites. Free account, no card.",
+      "envVar": "LASSO_LICENSE_KEY",
+      "sensitive": true
+    }
+  ]
+}
